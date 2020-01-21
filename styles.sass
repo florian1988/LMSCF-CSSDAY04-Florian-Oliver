@@ -1,0 +1,65 @@
+body
+  margin: 0
+  padding: 0
+  text-align: center
+  background-image: url('https://vistapointe.net/images/landscape-4.jpg')
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-size: cover
+
+.head
+  height: 50px
+  width: 100%
+  background: linear-gradient(black, #DAF7A6)
+
+.header
+  color: #FFC300
+  background: linear-gradient(#DAF7A6, black)
+  box-shadow: 0px -3px 48px 6px black
+  font-size: 100px
+
+nav
+  display: flex
+  justify-content: center
+
+.div
+  display: flex
+  justify-content: center
+  position: relative
+  height: 200px
+  width: 70%
+  border: 2px solid black
+  margin: 30px
+  transition: transform 1s
+  transition-timing-function: linear
+  background: blue
+
+  &:hover
+    rotation: 360deg
+    transform: rotate(360deg)
+    background: red
+
+ul
+  list-style: none
+
+  li
+    float: left
+
+li a
+  text-decoration: none
+  padding: 60px
+  color: white
+  font-size: 20px
+
+.one
+  transition: height 1s, width 1s,transform 1s
+
+  &:hover
+    background: blue
+    color: red
+    width: 200px
+    height: 200px
+    transform: rotate(360deg)
+    font-size: 30px
+    display: flex
+    justify-content: center
