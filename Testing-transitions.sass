@@ -1,5 +1,75 @@
-// variables
+$head-color: black
+$color-head: #DAF7A6
+$coolor-head: #FFC300
+$red: red
+$blue: blue
 
-$black-color: black
-$head-color: #DAF7A6
-§color-head: #FFC300
+
+.display 
+  display: flex
+  justify-content: center
+
+
+
+body
+  margin: 0
+  padding: 0
+  text-align: center
+  background-image: url('https://vistapointe.net/images/landscape-4.jpg')
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-size: cover
+
+.head
+  height: 50px
+  width: 100%
+  background: linear-gradient($head-color, $color-head)
+
+.header
+  color: $coolor-head
+  background: linear-gradient($color-head, $head-color)
+  box-shadow: 0px -3px 48px 6px $head-color
+  font-size: 100px
+
+nav
+  @extend .display
+
+.div
+  @extend.display
+  position: relative
+  height: 200px
+  width: 70%
+  border: 2px solid $head-color
+  margin: 30px
+  transition: transform 1s
+  transition-timing-function: linear
+  background: blue
+
+  &:hover
+    rotation: 360deg
+    transform: rotate(360deg)
+    background: red
+
+ul
+  list-style: none
+
+  li
+    float: left
+
+li a
+  text-decoration: none
+  padding: 60px
+  color: white
+  font-size: 20px
+
+.one
+  transition: height 1s, width 1s,transform 1s
+
+  &:hover
+    background: $blue
+    color: $red
+    width: 200px
+    height: 200px
+    transform: rotate(360deg)
+    font-size: 30px
+    @extend .display
